@@ -9,9 +9,11 @@ const LineaTitle = () => {
                     <h3>+100 años</h3>
                     <p>Contamos con mas de 130 años de historia como parte de la Sociedad Italiana. El 7 de julio de 1895 fue fundada, en la cual 112 años hubo cine</p>
                 </div>
-                <div className="item-linea">
+                                <div className="item-linea">
                     <h3>Museo vivo</h3>
-                    <p>Somos un museo el cual acompaña la historia de nuestro cine, el cual persiste mas vivo que nunca</p>
+                    <p>
+                        Somos un museo que acompaña la historia de nuestro cine, el cual persiste más vivo que nunca. No solo conservamos objetos y recuerdos, sino que también promovemos actividades, visitas guiadas y talleres que acercan la experiencia cinematográfica a personas de todas las edades.
+                    </p>
                 </div>
                 <div className="item-linea">
                     <h3>Patrimonio Cultural</h3>

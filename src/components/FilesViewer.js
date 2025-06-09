@@ -108,10 +108,10 @@ const FilesViewer = () => {
 
   return (
     <div className="files-viewer">
-      {renderCollection("Pecera N°1", coleccion1, openIndex, setOpenIndex, offset1)}
-      {renderCollection("Pecera N°2 Coleccion Roberto Nicholson", coleccion2, openIndex, setOpenIndex, offset2)}
-      {renderCollection("Pecera N°3 Coleccion Mario Espejo y sala de muestras", coleccion3, openIndex, setOpenIndex, offset3)}
-      {renderCollection("Pecera N°4", coleccion4, openIndex, setOpenIndex, offset4)}
+      {renderCollection("Pecera N°1 - Colección Asoc. Italiana", coleccion1, openIndex, setOpenIndex, offset1)}
+      {renderCollection("Pecera N°2 - Colección Roberto Nicholson", coleccion2, openIndex, setOpenIndex, offset2)}
+      {renderCollection("Pecera N°3 - Colección Mario Espejo y sala de muestras", coleccion3, openIndex, setOpenIndex, offset3)}
+      {renderCollection("Pecera N°4 - Colección Roque Catania", coleccion4, openIndex, setOpenIndex, offset4)}
     </div>
   );
 };

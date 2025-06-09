@@ -1,10 +1,9 @@
 import React,{useState} from "react";
 import Slider from "react-slick";
 import img1 from "../assets/peceranueva.jpg";
-import img2 from "../assets/imagen2.jpeg";
-import img3 from "../assets/imagen3.jpeg";
-import img4 from "../assets/imagen4.jpeg";
-import img5 from "../assets/imagen5.jpeg";
+import img2 from "../assets/news/imagen1.jpg";
+import img3 from "../assets/news/imagen2.jpg";
+import img4 from "../assets/news/imagen3.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/News.css";
@@ -20,7 +19,7 @@ const settings = {
   autoplaySpeed: 3000,
 };
 
-const images = [img1, img2, img3, img4, img5];
+const images = [img1, img2, img3, img4];
 
 const News = () => {
   const [modalImg, setModalImg] = useState(null);
@@ -47,7 +46,11 @@ const News = () => {
                   <div className="slide-text">
                     <h4>Tenemos nueva colección</h4>
                     <p>
-                      Estamos finalizando con la construcción de una nueva pecera para sumar una nueva colección… ¡Pronto más novedades!
+                      Estamos finalizando con la construcción de una nueva pecera para sumar una nueva colección… 
+                      <br />
+                      Esta se estrenará el proximo 12 de Junio,
+                      <br />
+                      ¡Pronto más novedades!
                     </p>
                   </div>
                 </div>

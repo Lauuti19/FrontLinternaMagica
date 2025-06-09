@@ -27,7 +27,7 @@ const Videos = () => {
             <img src={proximoVideo} alt=""></img>
         </div>
         <div class="Videos">
-            <h2>3. Colección Mario Espejo</h2>
+            <h2>3. Sala de Muestras</h2>
             <img src={proximoVideo} alt=""></img>
         </div>
         </div>
