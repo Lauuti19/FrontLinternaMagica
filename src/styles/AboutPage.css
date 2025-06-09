@@ -235,3 +235,42 @@
   border: none;
   cursor: pointer;
 }
+/* AboutPage.css */
+@media (max-width: 900px) {
+  .title-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-title, .img-separador-wrapper {
+    width: 100vw;
+    min-width: 0;
+    height: auto;
+    padding: 20px;
+  }
+  .img-separador {
+    width: 100vw;
+    height: 200px;
+    object-fit: cover;
+  }
+  .Sociedad {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .Imagen-Sociedad img {
+    width: 90vw;
+    max-width: 300px;
+  }
+  .Texto-Sociedad {
+    width: 98vw;
+    padding: 10px;
+  }
+  .Contribuyentes-Container {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .Contribuyente {
+    max-width: 95vw;
+    padding: 1rem;
+  }
+}

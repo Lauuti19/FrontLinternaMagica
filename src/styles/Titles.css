@@ -86,3 +86,24 @@
     color: #191818;
     margin: 0;
 }
+/* Titles.css */
+@media (max-width: 700px) {
+  .Textos-Linea h1 {
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+  .Textos-Linea h2 {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+  .item-linea h3, .item-linea p {
+    width: 90vw;
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .items-linea {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+}

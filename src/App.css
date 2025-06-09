@@ -37,7 +37,9 @@
     transform: rotate(360deg);
   }
 }
-
+* {
+  box-sizing: border-box;
+}
 
 @font-face {
   font-family: 'Emigrate';

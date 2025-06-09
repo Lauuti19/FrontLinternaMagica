@@ -170,3 +170,21 @@
   cursor: pointer;
   z-index: 10;
 }
+/* Timeline.css */
+@media (max-width: 900px) {
+  .timeline-container {
+    height: auto;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  .timeline {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
+    min-width: 0;
+  }
+  .timeline-item {
+    min-width: 90vw;
+    margin-bottom: 20px;
+  }
+}

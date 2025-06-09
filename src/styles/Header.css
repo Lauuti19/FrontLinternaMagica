@@ -145,3 +145,25 @@
 .nav-links a:hover {
   color: #8d8686;
 }
+/* Header.css */
+@media (max-width: 700px) {
+  .header {
+    height: 60vh;
+    padding: 0 1rem;
+  }
+  .header.scrolled {
+    height: 70px;
+    padding: 0 0.5rem;
+  }
+  .logo-main img {
+    height: 120px;
+  }
+  .logo-small img {
+    height: 50px;
+  }
+  .nav-links {
+    gap: 1rem;
+    font-size: 1rem;
+    margin-right: 0;
+  }
+}
