@@ -1,0 +1,46 @@
+.files-page{
+    padding-top: 200px;
+    background-color: #fdfafa;
+}.title-container-files{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-text{
+    text-align: start;
+    padding: 50px;
+    width: 50vw;
+}
+.title-text h1{
+    font-size: 5.5rem;
+  text-transform: uppercase;
+  margin-bottom: -30px;
+  margin-top: 0;
+  text-align: start;
+  font-family: 'Geoform', Arial, sans-serif;
+  width: 220px;
+}
+.title-text h2{
+    font-size: 1.5rem;
+  text-align: start;
+  width: 220px;
+  font-family: 'Orliet';
+  font-weight:300;
+}
+.title-image img{
+    height: 500px;
+    margin-top: -50px;
+    filter: drop-shadow(1px 2px 12px rgba(0, 0, 0, 0.479));
+}
+.suggestion{
+    padding: 30px;
+    border-radius: 20px;
+    width: 800px;
+    margin: 0 auto;
+    font-weight: lighter;
+    transition: background-color 0.3s ease;
+}
+.suggestion{
+    background-color: #e0dada;
+    width: 600px;
+}

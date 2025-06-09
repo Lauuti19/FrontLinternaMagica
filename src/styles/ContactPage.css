@@ -1,0 +1,89 @@
+.contact-page {
+    padding-top: 200px !important;
+  max-width: 800px;
+  margin: 48px auto 60px auto;
+  padding: 32px 18px;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  font-family: 'Geoform', Arial, sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: start;
+  color: #181818;
+  font-weight: 700;
+  width: 100%;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  width: 100%;
+  justify-content: center;
+  text-align: start;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-width: 260px;
+  max-width: 300px;
+  font-family: 'Capsula', Arial, sans-serif;
+  font-size: 1.13rem;
+  color: #222;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.contact-label {
+  font-weight: 600;
+  color: #aa4545;
+  font-family: 'Geoform', Arial, sans-serif;
+  font-size: 1.08rem;
+}
+
+.contact-info a {
+  color: #181818;
+  text-decoration: underline;
+  transition: color 0.2s;
+  word-break: break-all;
+}
+.contact-info a:hover {
+  color: #3b246e;
+}
+
+.contact-soon {
+  color: #aaa;
+  font-style: italic;
+}
+
+.contact-map iframe{
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .contact-map {
+    max-width: 98vw;
+  }
+}

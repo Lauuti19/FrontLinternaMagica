@@ -1,0 +1,237 @@
+.about-page {
+  padding-top: 100px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #e7e0e0;
+}
+
+/* Contenido de la izquierda */
+.about-title {
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box; /* incluye el padding dentro del height */
+  padding: 50px;
+  width: 50vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.about-title h2 {
+  font-size: 1.5rem;
+  padding-top: 100px;
+  margin-bottom: -20px;
+  text-align: start;
+  width: 220px;
+  font-family: 'Orliet';
+  font-weight:300;
+}
+
+.about-title h1 {
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  margin-bottom: -30px;
+  margin-top: 0;
+  text-align: start;
+  width: 220px;
+}
+
+.about-title button {
+  margin-top: 100px;
+  border: solid 1px black;
+  width: 150px;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-family: 'Geoform', Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+.Button-Ver{
+  background-color: transparent;
+  padding: 20px 50px;
+  font-size: 1.2rem;
+  border: solid 1px black;
+}
+.Button-Ver:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  font-weight: lighter;
+}
+.about-title button:hover {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  font-weight: lighter;
+}
+
+/* Imagen claqueta — aparece "asomando" */
+.img-claqueta-wrapper {
+  position: absolute;
+  bottom: -130px; /* más abajo para que solo se vea la parte superior */
+  right: 150px;
+  transform: translateX(50%);
+  width: 400px;
+  pointer-events: none;
+  z-index: 1;
+  height: 400px;
+}
+
+.img-claqueta {
+  width: 80%;
+  height: auto;
+  filter: brightness(0.3);
+  display: block;
+}
+
+/* Imagen de la derecha */
+.img-separador {
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover; /* asegura que la imagen se recorte pero cubra todo */
+  display: block;
+}
+.img-separador-wrapper {
+  height: 100vh;
+  width: 50vw;
+  overflow: hidden;
+}
+.Inicios, .Avance, .Pandemia, .Renovamos{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding:50px 0px 50px 0px;
+}
+.Texto-Inicio,.Texto-Avance,.Texto-Pandemia, .Texto-Renovamos{
+  padding: 20px;
+  text-align: start;
+  height: 450px;
+}
+.Texto-Inicio h2,.Texto-Avance h2, .Texto-Pandemia h2, .Texto-Renovamos h2{
+  font-size: 2rem;
+}
+.Texto-Inicio h3,.Texto-Avance h3, .Texto-Pandemia h3, .Texto-Renovamos h3{
+  color: rgb(53, 50, 50);
+  font-weight: lighter;
+  font-size: 1.5rem;
+  width: 400px;
+}
+.Imagen-Inicio, .Imagen-Avance, .Imagen-Pandemia, .Imagen-Renovamos{
+  padding: 20px;
+}
+.Imagen-Inicio img, .Imagen-Avance img, .Imagen-Pandemia img, .Imagen-Renovamos img{
+  height: 430px;
+  width: 650px;
+}
+.Contribuyentes {
+  padding: 2rem;
+  background-color: #fdfdfd;
+}
+
+.Contribuyentes h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.Contribuyentes-Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.Contribuyente {
+  max-width: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Contribuyente img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Contribuyente h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.Contribuyente p {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.Sociedad{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.Texto-Sociedad{
+  width: 700px;
+  padding: 20px;
+  text-align: start;
+}
+.Texto-Sociedad h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: rgb(53, 50, 50);
+}
+.Texto-Sociedad h2{
+  font-size: 1.2rem;
+  color: rgb(53, 50, 50);
+  font-weight: 400;
+}
+.Imagen-Sociedad img{
+  width: 400px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 80%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

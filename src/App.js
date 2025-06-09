@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
+import HomePage from './pages/HomePage';
+import FilesPage from './pages/FilesPage'; // Asegúrate de tener este archivo
+import AboutPage from './pages/AboutPage';
+import VideoPage from './pages/VideoPage'; // Asegúrate de tener este archivo
+import separadorImg from "./assets/tiraabout.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+//import Slider from "react-slick";
+import ContactPage from './pages/ContactPage';
 
 function App() {
+  useEffect(() => {
+    const img = new Image();
+    img.src = separadorImg;
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/files" element={<FilesPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/video" element={<VideoPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

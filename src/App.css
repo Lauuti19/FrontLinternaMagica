@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+/*191818*/
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +36,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@font-face {
+  font-family: 'Emigrate';
+  src: url(./assets/fonts/Emigrate.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Brunson';
+  src: url(./assets/fonts/Brunson.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Renco';
+  src: url(./assets/fonts/Renco-Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'volunmo';
+  src: url(./assets/fonts/volunmo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dalvetica';
+  src: url(./assets/fonts/Davetica-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Merifto';
+  src: url(./assets/fonts/Merifto\ DEMO\ VERSION.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Onesta';
+  src: url(./assets/fonts/Onesta\ Vigano\ DEMO\ VERSION.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Hazeon';
+  src: url(./assets/fonts/Hazeon.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Orliet';
+  src: url(./assets/fonts/Orliet\ Pro.otf) format('opentype');
 }

@@ -1,0 +1,121 @@
+.Textos-Noticias-Title{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+  margin-bottom: 1.5rem;
+}
+.Textos-Noticias-Title h2{
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: start;
+  font-weight: bold;
+  margin-bottom: 1px;
+  
+}
+.Textos-Noticias-Title .Button-Ver{
+  width: 300px;
+}
+.imagen-map{
+  width: 100vw;
+}
+.slide {
+  position: relative;
+}
+
+.imagen-map {
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Caja inclinada encima de la imagen */
+.slide-overlay {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #111;
+  padding: 1rem 1.5rem;
+  transform: skew(-5deg); /* inclinación */
+  z-index: 2;
+  max-width: 30%;
+  height: auto;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slide-text {
+  transform: skew(5deg); /* contrarresta la inclinación para que el texto quede recto */
+}
+
+.slide-text h4 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(24, 19, 17);
+  padding: 20px;
+}
+
+.slide-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: grey;
+}
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Contenido del modal */
+.modal-content {
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+}
+
+/* Botón de cerrar */
+.modal-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: white;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Cursor pointer a las imágenes */
+.imagen-map {
+  width: 100%;
+  height: 450px; /* o la altura que prefieras */
+  object-fit: cover; /* mantiene proporción y recorta el resto */
+  display: block;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 80vw; /* o el valor que prefieras */
+  margin: 0 auto;
+}
