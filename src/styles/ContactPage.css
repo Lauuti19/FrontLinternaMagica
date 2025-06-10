@@ -83,6 +83,9 @@
     gap: 2rem;
     align-items: center;
   }
+  .contact-title{
+    font-size: 3rem;
+  }
   .contact-map {
     max-width: 98vw;
   }

@@ -127,28 +127,33 @@
     padding: 0 2vw;
   }
   .slider-container {
-    width: 98vw;
+    width: 90vw;
     max-width: 98vw;
     padding: 8px 0;
   }
   .slide img, .imagen-map {
-    max-width: 95vw;
+    max-width: 90vw;
     max-height: 220px;
     width: 100%;
     height: auto;
   }
-  .Textos {
-    max-width: 98vw;
-    text-align: center;
+  .slide-text{
+    width: 40vw;
+  }
+  .slide-text h4{
+    font-size: 1rem;
+  }
+  .slide-text p {
+    font-size: 0.8rem;
   }
   .slide-overlay {
     left: 10px;
-    top: 10px;
+    top: -10px;
     max-width: 80vw;
     padding: 0.5rem 1rem;
+    filter: drop-shadow(1px 4px 12px  black);
   }
-  .slide-text h4 {
-    font-size: 1.2rem;
-    padding: 10px;
+  .Textos-Noticias-Title h2{
+    font-size: 3rem;
   }
 }

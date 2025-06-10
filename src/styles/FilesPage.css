@@ -44,3 +44,18 @@
     background-color: #e0dada;
     width: 600px;
 }
+@media (max-width: 900px) {
+    .title-image{
+        display: none;
+    }
+    .title-text{
+        padding: 10px;
+        width: 100%;
+    }
+    .title-text h1{
+        font-size: 3rem;
+    }
+    .suggestion{
+        width: 80vw;
+    }
+}

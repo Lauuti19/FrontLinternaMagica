@@ -96,14 +96,34 @@
     font-size: 1.1rem;
     padding: 10px;
   }
+  .item-linea h3{
+    font-size: 1.5rem !important;
+  }
   .item-linea h3, .item-linea p {
-    width: 90vw;
-    font-size: 1rem;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 0.9rem;
     padding: 0 10px;
+    text-align: center;
   }
   .items-linea {
     flex-direction: column;
     gap: 20px;
     padding-bottom: 40px;
+  }
+  .Textos-Recorrido{
+    width: 100%;
+  }
+  .Textos-Recorrido h2{
+    text-transform: uppercase;
+  }
+  #Texto-Recorrido{
+    font-size: 1rem;
+    width: 90vw;
+  }
+  #Frase{
+    font-size:1.8rem;
   }
 }

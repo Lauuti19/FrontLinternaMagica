@@ -247,9 +247,18 @@
     height: auto;
     padding: 20px;
   }
+  .about-title h2{
+    font-size: 0.9rem;
+  }
+  .about-title h1{
+    font-size: 3rem;
+    padding-bottom: 15px;
+  }
   .img-separador {
     width: 100vw;
-    height: 200px;
+    height: 300px;
+    margin-top: -50px;
+    display: none;
     object-fit: cover;
   }
   .Sociedad {
@@ -270,7 +279,21 @@
     align-items: center;
   }
   .Contribuyente {
-    max-width: 95vw;
+    max-width: 90vw;
     padding: 1rem;
+  }
+  .Imagen-Inicio img, .Imagen-Avance img, .Imagen-Pandemia img, .Imagen-Renovamos img{
+    width: 90vw;
+    height: 300px;
+  }
+  .Inicios, .Avance, .Pandemia, .Renovamos{
+    display: flex;
+    flex-direction: column;
+  }
+  .Texto-Inicio,.Texto-Avance,.Texto-Pandemia, .Texto-Renovamos{
+    margin-left: 20px;
+  }
+  .Texto-Inicio h3,.Texto-Avance h3, .Texto-Pandemia h3, .Texto-Renovamos h3{
+  width: 80vw;
   }
 }

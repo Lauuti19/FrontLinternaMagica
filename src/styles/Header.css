@@ -148,22 +148,28 @@
 /* Header.css */
 @media (max-width: 700px) {
   .header {
-    height: 60vh;
+    height: 100vh;
     padding: 0 1rem;
+    width: 100vw;
+    overflow: auto;
+    
   }
   .header.scrolled {
-    height: 70px;
+    height: 200px;
     padding: 0 0.5rem;
+    width: 100vw;
   }
   .logo-main img {
     height: 120px;
   }
   .logo-small img {
-    height: 50px;
+    display: none;
   }
   .nav-links {
     gap: 1rem;
-    font-size: 1rem;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
     margin-right: 0;
   }
 }
