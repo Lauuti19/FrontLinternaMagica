@@ -3,7 +3,7 @@ import {LineaTitle} from "../components/Titles";
 import "../styles/Timeline.css"; // Usa tu archivo de estilos, o pon los estilos en el global
 
 const timelineData = {
-  "1913": "Ejemplo",
+  "1913": `En el mes de Abril, el Sr. Antonio Liffourrena alquila el salón social de la "Sociedad Italiana" y funda el "Cine 43" dando inicio a un vinculo entre el cine y la institución. El 18 de septiembre el terceto nacional "Gardel, Martino y Razzano" se presenta en la sala "Cine 43" cerrando la gira denominada: "cruzada artistica"`,
   "1914": "Liborio Castagno instala el primer biógrafo del pueblo en el salón social de la Asoc. Italiana. Proyectando cintas mudas que musicalizaba con su piano.",
   "1925": "Debido al crecimiento del cine como fenómeno de masas en el mundo y al éxito de las proyecciones en el buffet, la comisión decide la construcción de la sala de cine-teatro.",
   "1930": "Abre sus puertas la primer sala de cine-teatro de Los Toldos construida por Luis Bertello e hijos, orgullo de la Asoc. Italiana.",
