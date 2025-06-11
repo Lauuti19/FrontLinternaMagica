@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "../styles/AboutPage.css";
 import separadorImg from '../assets/tiraabout.png';
 import iniciosimg from '../assets/inicios.jpg';
@@ -13,6 +13,8 @@ import bandera from "../assets/bandera.png";
 const AboutPage = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalText, setModalText] = useState("");
+  const sociedadRef = useRef(null);
+
 
   useEffect(() => {
     const preload = new Image();
@@ -23,6 +25,11 @@ const AboutPage = () => {
     setModalText(text);
     setModalOpen(true);
   };
+   const handleSaberMasClick = () => {
+    if (sociedadRef.current) {
+      sociedadRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="about-page">
@@ -31,7 +38,7 @@ const AboutPage = () => {
           <h2>Un viaje a través de</h2>
           <h1>nuestra</h1>
           <h1>historia</h1>
-          <button>Saber Más</button>
+          <button onClick={handleSaberMasClick}>Saber Más</button>
           
         </div>
         <div className="img-separador-wrapper">
@@ -39,7 +46,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="body-container">
-        <div className="Sociedad">
+        <div className="Sociedad" ref={sociedadRef}>
            <div className="Imagen-Sociedad">
             <img src={bandera} alt=""></img>
           </div>
