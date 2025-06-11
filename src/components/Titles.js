@@ -21,7 +21,6 @@ const LineaTitle = () => {
                 </div>
             </div>
             <h1>Línea de Tiempo</h1>
-            <p>Haciendo click o tocando sobre cada año podras obtener mas información</p>
         </div>
     );
     }
