@@ -46,9 +46,9 @@ const News = () => {
                   <div className="slide-text">
                     <h4>Tenemos nueva colección</h4>
                     <p>
-                      Estamos finalizando con la construcción de una nueva pecera para sumar una nueva colección… 
+                      Finalizamos con la obra de nuestra última colección "Roque Catania"
                       <br />
-                      Esta se estrenará el proximo 12 de Junio,
+                      Disponible a partir del 12 de Junio
                       <br />
                       ¡Pronto más novedades!
                     </p>
