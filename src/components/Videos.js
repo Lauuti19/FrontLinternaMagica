@@ -1,8 +1,10 @@
 import React from "react";
 import { AhoraTitle } from "./Titles";
-import "../styles/Videos.css"; // Asegúrate de tener los estilos necesarios
-//import exVideo from "../assets/pruebaguia.mp4";
-import proximoVideo from "../assets/proximamente-vids.png";
+import "../styles/Videos.css"; 
+import video1 from '../assets/pecera1video.mp4';
+import video2 from '../assets/pecera2video.mp4';
+import video3 from '../assets/pecera3video.mp4';
+import video4 from '../assets/video4peceraa.mp4';
 
 const Videos = () => {
     return (
@@ -20,15 +22,19 @@ const Videos = () => {
         <div class="Contenedor-Guias">
         <div class="Videos">
             <h2>1. Colección Asoc. Italiana</h2>
-            <img src={proximoVideo} alt=""></img>
+            <video src={video1} type="video/mp4" controls></video>
         </div>
         <div class="Videos">
-            <h2>2. Coleccion Roberto Nicholson</h2>
-            <img src={proximoVideo} alt=""></img>
+            <h2>2. Colección Roberto Nicholson</h2>
+            <video src={video2} type="video/mp4" controls></video>
         </div>
         <div class="Videos">
-            <h2>3. Sala de Muestras</h2>
-            <img src={proximoVideo} alt=""></img>
+            <h2>3. Colección Roque Catania</h2>
+            <video src={video3} type="video/mp4" controls></video>
+        </div>
+        <div class="Videos">
+            <h2>4. Colección Mario Espejo - Sala de Muestras</h2>
+            <video src={video4} type="video/mp4" controls></video>
         </div>
         </div>
         </div>
