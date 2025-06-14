@@ -1,10 +1,10 @@
 import React from "react";
 import { AhoraTitle } from "./Titles";
 import "../styles/Videos.css"; 
-import video1 from '../assets/pecera1video.mp4';
-import video2 from '../assets/pecera2video.mp4';
-import video3 from '../assets/pecera3video.mp4';
-import video4 from '../assets/video4peceraa.mp4';
+// import pecera1 from ;
+// import pecera2 from ;
+// import pecera3 from ;
+// import pecera4 from ;
 
 const Videos = () => {
     return (
@@ -22,19 +22,19 @@ const Videos = () => {
         <div class="Contenedor-Guias">
         <div class="Videos">
             <h2>1. Colección Asoc. Italiana</h2>
-            <video src={video1} type="video/mp4" controls></video>
+            <video src={pecera1} type="video/mp4" controls></video>
         </div>
         <div class="Videos">
             <h2>2. Colección Roberto Nicholson</h2>
-            <video src={video2} type="video/mp4" controls></video>
+            <video src={pecera2} type="video/mp4" controls></video>
         </div>
         <div class="Videos">
             <h2>3. Colección Roque Catania</h2>
-            <video src={video3} type="video/mp4" controls></video>
+            <video src={pecera3} type="video/mp4" controls></video>
         </div>
         <div class="Videos">
             <h2>4. Colección Mario Espejo - Sala de Muestras</h2>
-            <video src={video4} type="video/mp4" controls></video>
+            <video src={pecera4} type="video/mp4" controls></video>
         </div>
         </div>
         </div>
