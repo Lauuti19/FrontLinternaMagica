@@ -25,7 +25,6 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/files" element={<FilesPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/video" element={<VideoPage />} />
           <Route path="/contact" element={<ContactPage />} />
 
         </Routes>
