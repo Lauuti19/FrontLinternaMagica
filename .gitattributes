@@ -1,2 +1,0 @@
-pecera1video.mp4,pecera2video.mp4,pecera3video.mp4,video4peceraa.mp4 filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
