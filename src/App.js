@@ -6,7 +6,6 @@ import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import FilesPage from './pages/FilesPage'; // Asegúrate de tener este archivo
 import AboutPage from './pages/AboutPage';
-import VideoPage from './pages/VideoPage'; // Asegúrate de tener este archivo
 import separadorImg from "./assets/tiraabout.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
