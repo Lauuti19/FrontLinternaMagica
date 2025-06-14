@@ -1,10 +1,10 @@
 import React from "react";
 import { AhoraTitle } from "./Titles";
 import "../styles/Videos.css"; 
-// import pecera1 from ;
-// import pecera2 from ;
-// import pecera3 from ;
-// import pecera4 from ;
+import pecera1 from "../assets/peceras/pecera1video.mp4";
+import pecera2 from "../assets/peceras/pecera2video.mp4";
+import pecera3 from "../assets/peceras/pecera3video.mp4";
+import pecera4 from "../assets/peceras/pecera4video.mp4";
 
 const Videos = () => {
     return (
