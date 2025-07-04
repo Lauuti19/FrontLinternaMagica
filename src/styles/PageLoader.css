@@ -6,9 +6,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .page-loader-logo {
+    margin-bottom: -150px !important;
   width: 400px;
   height: 400px;
   -webkit-mask-image: url("../assets/Logo blanco.png");
@@ -24,6 +26,9 @@
   background-size: 200% 100%;
   background-position: left;
   animation: loader-fill 1.8s cubic-bezier(.7,0,.3,1) forwards;
+}
+#spinner-loader{
+  margin-top: -100px !important;
 }
 
 @keyframes loader-fill {

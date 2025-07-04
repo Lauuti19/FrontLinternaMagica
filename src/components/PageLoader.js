@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/PageLoader.css";
+import "../styles/FilesViewer.css"; // Asegúrate de importar el CSS del loader
 import Logo from "../assets/Logo blanco.png";
 
 const PageLoader = () => (
@@ -10,8 +11,10 @@ const PageLoader = () => (
         WebkitMaskImage: `url(${Logo})`,
         maskImage: `url(${Logo})`,
       }}
-    >
-      {/* El div vacío se rellena con el gradiente animado */}
+    />
+    <div className="files-loader" style={{ marginTop: 32 }}>
+      <div className="loader-spinner" id="spinner-loader"></div>
+      <span>Cargando...</span>
     </div>
   </div>
 );
