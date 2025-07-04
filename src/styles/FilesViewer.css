@@ -103,7 +103,144 @@
   animation: fadeInName 0.35s;
   box-shadow: 0 2px 12px rgba(28,168,75,0.13);
 }
+.files-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 32px;
+  margin-top: 10px;
+}
 
+.files-tab {
+  background: #dbd7d7;
+  color: #181818;
+  border: none;
+  border-radius: 18px 18px 0 0;
+  padding: 14px 32px;
+  font-size: 1.13rem;
+  font-family: 'Geoform', Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+/* Modal overlay */
+.files-modal-overlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(22,21,24,0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInModal 0.2s;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.files-modal-content {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.25);
+  padding: 24px 24px 18px 24px;
+  max-width: 96vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  animation: modalPop 0.25s;
+}
+
+@keyframes modalPop {
+  from { transform: scale(0.92); opacity: 0.7;}
+  to { transform: scale(1); opacity: 1;}
+}
+
+.files-modal-img {
+  max-width: 80vw;
+  max-height: 60vh;
+  border-radius: 12px;
+  box-shadow: 0 2px 18px rgba(0,0,0,0.13);
+  margin-bottom: 18px;
+  background: #eee;
+}
+
+.files-modal-title {
+  font-family: 'Capsula', Arial, sans-serif;
+  font-size: 1.18rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 8px;
+  word-break: break-word;
+  max-width: 80vw;
+}
+
+.files-modal-close {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #3c49c4;
+  cursor: pointer;
+  transition: color 0.2s;
+  z-index: 2;
+}
+.files-modal-close:hover {
+  color: #1ca84b;
+}
+
+/* Opcional: deshabilita scroll del fondo cuando el modal está abierto */
+body:has(.files-modal-overlay) {
+  overflow: hidden;
+}
+.files-tab.active,
+.files-tab:disabled {
+  background: #f1eeee;
+  color: #3c49c4;
+  cursor: default;
+  border-bottom: 3px solid #3c49c4;
+  box-shadow: 0 4px 16px rgba(28,168,75,0.07);
+}
+
+.files-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  gap: 18px;
+}
+
+.loader-spinner {
+  width: 38px;
+  height: 38px;
+  border: 4px solid #e0e0e0;
+  border-top: 4px solid #3c49c4;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 900px) {
+  .files-tabs {
+    gap: 0.5rem;
+  }
+  .files-tab {
+    padding: 10px 10px;
+    font-size: 1rem;
+  }
+}
 @keyframes fadeInName {
   from { opacity: 0; transform: translateY(20px);}
   to { opacity: 1; transform: translateY(0);}

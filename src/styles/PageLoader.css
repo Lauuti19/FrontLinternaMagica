@@ -1,0 +1,36 @@
+.page-loader-bg {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-loader-logo {
+  width: 400px;
+  height: 400px;
+  -webkit-mask-image: url("../assets/Logo blanco.png");
+  mask-image: url("../assets/Logo blanco.png");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  /* Cambia el gradiente: negro a blanco */
+  background: linear-gradient(90deg, #000 0%, #fff 100%);
+  background-size: 200% 100%;
+  background-position: left;
+  animation: loader-fill 1.8s cubic-bezier(.7,0,.3,1) forwards;
+}
+
+@keyframes loader-fill {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}

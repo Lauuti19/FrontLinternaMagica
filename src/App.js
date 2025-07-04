@@ -1,5 +1,5 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import PageLoader from "./components/PageLoader";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
@@ -13,10 +13,14 @@ import "slick-carousel/slick/slick-theme.css";
 import ContactPage from './pages/ContactPage';
 
 function App() {
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const img = new Image();
     img.src = separadorImg;
+        const timer = setTimeout(() => setLoading(false), 1800);
+    return () => clearTimeout(timer);
   }, []);
+    if (loading) return <PageLoader />;
   return (
     <Router>
       <div className="App">
