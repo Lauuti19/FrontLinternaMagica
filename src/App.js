@@ -12,10 +12,6 @@ import ContactPage from './pages/ContactPage';
 const videoUrls = [
   require("./assets/header.mp4"),
   require("./assets/reemplazo.mp4"),
-  require("./assets/peceras/pecera1video.mp4"),
-  require("./assets/peceras/pecera2video.mp4"),
-  require("./assets/peceras/pecera3video.mp4"),  
-  require("./assets/peceras/pecera4video.mp4")
 ];
 const imageUrls = [
   require("./assets/tiraabout.png"),

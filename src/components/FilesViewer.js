@@ -250,6 +250,7 @@ import p4thumb76 from '../assets/Archivo/pecera4/thumbs/pecera4 (76).jpg';
 import p4thumb77 from '../assets/Archivo/pecera4/thumbs/pecera4 (77).jpg';
 import p4thumb78 from '../assets/Archivo/pecera4/thumbs/pecera4 (78).jpg';
 import p4thumb79 from '../assets/Archivo/pecera4/thumbs/pecera4 (79).jpg';
+import aaaa from '../assets/Archivo/pecera4/aaa.jpg';
 
 
 
@@ -273,7 +274,8 @@ const coleccion2 = [
 ];
 const coleccion3 = [
   {src: p4img24, name: "Filmoteca colección Roberto Nicholson"},
-  { thumb: p4thumb21, src: p4img21, name: "" },
+  { thumb: p4thumb21, src: p4img21, name: "Juguete Proyector Keystone" },
+  { src: aaaa, name: "Proyector súper 8 duo - BOLEX" },
   { src: p3img2, name: "Ruberg. Proyector de 16 mm. No sonoro ( mudo )" },
   { thumb: p4thumb34, src: p4img34, name: "Proyector super 8, IMAC - Milan, Italia" },
   { thumb: p4thumb48, src: p4img48, name: "Camara filmadora súper 8, PICTURE AMERICAN in color XL 503" },
