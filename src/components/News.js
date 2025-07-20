@@ -21,19 +21,19 @@ const settings = {
 
 const slides = [
   {
-    title: "Tenemos nueva colección",
+    title: "Nueva colección",
     caption:
       "Finalizamos con la obra de nuestra última colección 'Roque Catania'. Disponible dentro de nuestra sala de cine Leonardo Favio",
     images: [img1],
   },
   {
-    title: "Tenemos nueva colección",
+    title: "Nueva colección",
     caption:
       "Finalizamos con la obra de nuestra última colección 'Roque Catania'. Disponible dentro de nuestra sala de cine Leonardo Favio",
     images: [img2],
   },
   {
-    title: "Visita guiada especial",
+    title: "Visita especial",
     caption:
       "Entre las recientes visitas recibimos la compañia de los estudiantes de secundaria del Colegio San José. ¡Gracias por visitarnos!",
     images: [img3], // 2 imágenes para este slide

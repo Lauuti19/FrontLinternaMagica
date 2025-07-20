@@ -251,6 +251,8 @@ import p4thumb77 from '../assets/Archivo/pecera4/thumbs/pecera4 (77).jpg';
 import p4thumb78 from '../assets/Archivo/pecera4/thumbs/pecera4 (78).jpg';
 import p4thumb79 from '../assets/Archivo/pecera4/thumbs/pecera4 (79).jpg';
 import aaaa from '../assets/Archivo/pecera4/aaa.jpg';
+import aaab from '../assets/Archivo/pecera4/aaab.jpeg';
+import aaac from '../assets/Archivo/pecera4/aaac.jpeg';
 
 
 
@@ -275,7 +277,9 @@ const coleccion2 = [
 const coleccion3 = [
   {src: p4img24, name: "Filmoteca colección Roberto Nicholson"},
   { thumb: p4thumb21, src: p4img21, name: "Juguete Proyector Keystone" },
-  { src: aaaa, name: "Proyector súper 8 duo - BOLEX" },
+  { src: aaaa, name: "Proyector súper 8 duo - BOLEX" , nuevo:true},
+  { src: aaab, name: "Camara filmadora super 8 - ELMO 1/2" , nuevo:true},
+  { src: aaac, name: "Camara filmadora super 8 - ELMO 2/2" , nuevo:true},
   { src: p3img2, name: "Ruberg. Proyector de 16 mm. No sonoro ( mudo )" },
   { thumb: p4thumb34, src: p4img34, name: "Proyector super 8, IMAC - Milan, Italia" },
   { thumb: p4thumb48, src: p4img48, name: "Camara filmadora súper 8, PICTURE AMERICAN in color XL 503" },
@@ -285,7 +289,7 @@ const coleccion3 = [
   { thumb: p4thumb26, src: p4img26, name: "Lente de camara ISCO-OPTIC - Origen Alemania"},
   { thumb: p4thumb28, src: p4img28, name: "Lente de camara - Passed" },
   { thumb: p4thumb27, src: p4img27, name: "Empalmadora de celuloide 35mm." },
-  { thumb: p4thumb29, src: p4img29, name: "" },
+  { thumb: p4thumb29, src: p4img29, name: "Rodillos de pared 35mm." },
   { thumb: p4thumb30, src: p4img30, name: `Figura "Joker" Funko Pop, donado por Luz Catania` },
   { thumb: p4thumb31, src: p4img31, name: "Caja de revelado fotográfico - Max Fiedler 1/3" },
   { thumb: p4thumb32, src: p4img32, name: "Caja de revelado fotográfico - Max Fiedler 2/3" },
@@ -352,8 +356,8 @@ const coleccion3 = [
   { thumb: p4thumb73, src: p4img73, name: "Postal Federico Fellini" },
   { thumb: p4thumb74, src: p4img74, name: "Postal Fellini Museum" },
   { thumb: p4thumb75, src: p4img75, name: "Foto postal Pelicula Delfín" },
-  { thumb: p4thumb76, src: p4img76, name: "" },
-  { thumb: p4thumb77, src: p4img77, name: "" }
+  { thumb: p4thumb76, src: p4img76, name: "Postal" },
+  { thumb: p4thumb77, src: p4img77, name: "Catálogo festival cine de Mar del Plata" }
   
 ];
 const coleccion4 = [
@@ -454,6 +458,7 @@ const FilesViewer = () => {
                   className="file-img"
                   loading="lazy"
                 />
+                {img.nuevo && <div className="file-badge">¡Nuevo!</div>}
               </div>
             ))}
           </div>
