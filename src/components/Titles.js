@@ -3,17 +3,17 @@ import "../styles/Titles.css"; // Asegúrate de tener los estilos necesarios
 const LineaTitle = () => {
     return (
         <div className="Textos-Linea">
-            <h2>Tenemos Historia </h2>
             <div className="items-linea">
+                
                 <div className="item-linea">
-                    <h3>+100 años</h3>
-                    <p>Contamos con mas de 130 años de historia como parte de la Sociedad Italiana. El 7 de julio de 1895 fue fundada, en la cual 112 años hubo cine</p>
-                </div>
-                                <div className="item-linea">
                     <h3>Museo vivo</h3>
                     <p>
                         Somos un museo que acompaña la historia de nuestro cine, el cual persiste más vivo que nunca. No solo conservamos objetos y recuerdos, sino que también promovemos actividades, visitas guiadas y talleres que acercan la experiencia cinematográfica a personas de todas las edades.
                     </p>
+                </div>
+                <div className="item-linea">
+                    <h3>+100 años</h3>
+                    <p>Contamos con mas de 130 años de historia como parte de la Sociedad Italiana. El 7 de julio de 1895 fue fundada, en la cual 112 años hubo cine</p>
                 </div>
                 <div className="item-linea">
                     <h3>Patrimonio Cultural</h3>

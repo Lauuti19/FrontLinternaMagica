@@ -1,3 +1,77 @@
+.news-section {
+  padding: 2rem 0;
+  max-width: 90vw;
+  margin: auto;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-title h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.slide-figure {
+  width: 100%;
+  max-width: 80vw;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.slide-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+.slide-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  padding: 0 1rem;
+}
+.Caption-Text{
+  background-color: rgb(223, 215, 215);
+  font-size: 20px;
+  padding: 20px;
+  width: 80vw;
+}
+.img-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0,0,0,0.85);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  z-index: 1001;
+}
+
+
+/* News.css */
 .Textos-Noticias-Title{
   display: flex;
   flex-direction: column;
@@ -126,34 +200,25 @@
     gap: 1.5rem;
     padding: 0 2vw;
   }
-  .slider-container {
-    width: 90vw;
-    max-width: 98vw;
-    padding: 8px 0;
-  }
-  .slide img, .imagen-map {
-    max-width: 90vw;
-    max-height: 220px;
+  .slide-figure {
     width: 100%;
-    height: auto;
+    max-width: 90vw;
+    height: 45vh; /* ✅ altura adaptada a mobile */
   }
-  .slide-text{
-    width: 40vw;
+
+  .slide-figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  .slide-text h4{
-    font-size: 1rem;
+
+  .slide-caption {
+    font-size: 0.9rem;
+    padding: 1rem;
+    max-width: 90vw;
   }
-  .slide-text p {
-    font-size: 0.8rem;
-  }
-  .slide-overlay {
-    left: 10px;
-    top: -10px;
-    max-width: 80vw;
-    padding: 0.5rem 1rem;
-    filter: drop-shadow(1px 4px 12px  black);
-  }
-  .Textos-Noticias-Title h2{
+
+  .Textos-Noticias-Title h2 {
     font-size: 3rem;
   }
 }
